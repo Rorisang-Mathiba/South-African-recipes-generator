@@ -14,19 +14,22 @@
         <h1>AI South African Food Recipe Generator</h1>
       </header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter an ingredient..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-instructions"
-          />
-          <input type="submit" class="button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter an Ingredient or Meal"
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-instructions"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <div class="hint">i.e: Pap, Mogodu, Chakalaka</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
